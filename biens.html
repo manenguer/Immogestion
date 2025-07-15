@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des biens immobilier</title>
+    <link rel="stylesheet" href="Biens.css">
+</head>
+<body>
+    <main class="container">
+        <h1 class="title">
+            <img src="image/bien logo.png" alt="logo"
+            class="logo"/>
+            Gestion des Biens immobilier
+        </h1>
+        <section class="form-section">
+            <h2>Ajouter un bien</h2>
+            <form id="propertyform">
+                <input type="text" id="titre du bien" required/>
+                <input type="text" id="localisation" 
+                placeholder="Localisation" required/>
+                <input type="number" id="Prix" placeholder="Prix(FCFA)" required/>
+                <input type="file" 
+                id="img" accept="image/*"/>
+                <button type="submit">
+                     Ajouter</button>
+            </form>
+        </section>
+
+        <section class="liste">
+            <h2>
+                biens enregistrés
+            </h2>
+            <!--Champs de recherche-->
+            <input type="text"
+            id="shearchBien" placeholder="Rechercher un bien..."/>
+
+            <div id="propertyCard"
+            class="properties">   
+            </div>
+
+        </section>
+
+    </main>
+    <script src="biens.js">
+    </script>
+</body>
+</html>
